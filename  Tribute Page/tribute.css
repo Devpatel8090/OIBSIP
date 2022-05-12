@@ -1,20 +1,22 @@
-
-*{
+* {
     margin: 0px;
     padding: 0px;
     background-color: #fffcf3;
-    color: #5e444b; 
-    
+    color: #5e444b;
+
 }
+
 .picture__container {
     display: flex;
     gap: 5;
     flex-direction: row;
 }
+
 #bouquet1 {
     size: 100px;
     margin: 7% 10% 0 35%;
 }
+
 #bouquet2 {
     size: 100px;
     margin: 7% 35% 0 10%;
@@ -27,45 +29,48 @@
     padding: 1%;
     width: 150px;
     margin: 0 45% 0 45%;
-   
-  }
 
-  #img1:hover {
-    box-shadow: 0 0 3px 3px #5e444b ;
-  }
-  
+}
+
+#img1:hover {
+    box-shadow: 0 0 3px 3px #5e444b;
+}
+
 
 h1 {
-    text-align: center;   
+    text-align: center;
     text-shadow: 2px 2px 2px #eee5e5;
-      }
+}
+
 .row__rose {
     width: 10%;
-    
+
     margin-left: 45%;
     margin-right: 45%;
 }
 
-.info__container{
+.info__container {
     text-align: center;
     font-size: larger;
     margin-top: 6%;
 
 }
-hr{
+
+hr {
     width: 30%;
     height: 10%;
     margin: 10px auto;
-    color:#5e444b ;
-   
+    color: #5e444b;
+
 }
+
 .prayer__container {
     text-align: center;
     margin: 1%;
-    
+
 
 }
-.shlok__container{
-  text-align: center;
-}
 
+.shlok__container {
+    text-align: center;
+}
