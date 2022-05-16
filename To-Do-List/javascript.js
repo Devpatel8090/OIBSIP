@@ -5,18 +5,21 @@ let addBtn = document.getElementById("addBtn");
 addBtn.addEventListener("click", function (e) {
   let addTxt = document.getElementById("addTxt");
   let addTitle = document.getElementById("addTitle");
+  let addTime = document.getElementById("addTime");
   let notes = localStorage.getItem("notes");
   if (notes == null) {
     notesObj = [];
-    notesObj.push([addTxt.value, addTitle.value]);
+    notesObj.push([addTitle.value,addTime.value,addTxt.value ]);
     localStorage.setItem("notes", JSON.stringify(notesObj)); // it save the items in the local storage in json formate
   } else {
     notesObj = JSON.parse(notes);
-    notesObj.push([addTxt.value, addTitle.value]);
+    notesObj.push([addTitle.value,addTime.value,addTxt.value ]);
     localStorage.setItem("notes", JSON.stringify(notesObj));
   }
   addTxt.value = "";
   addTitle.value = "";
+  addTime.value = "";
+  
   console.log(notesObj);
   showNotes();
 });
@@ -32,8 +35,9 @@ function showNotes() {
   notesObj.forEach(function (element, index) {
     html += `<tr class='table-content'>
                         
-        <td>${element[1]}</td>      
-        <td>${element[0]}</td> 
+        <td>${element[0]}</td>      
+        <td>${element[1]}</td> 
+        <td>${element[2]}</td> 
         <td><button id="${index}" onclick="deleteNote(this.id)" class="btn-remove">X</button></td>
       </tr>
       `
@@ -42,7 +46,7 @@ function showNotes() {
   if (notesObj.length != 0) {
     notesElm.innerHTML = html
   } else {
-    notesElm.innerHTML = `<td colspan="3" style="text-align: center;">NOTHING ADDED</td>`
+    notesElm.innerHTML = `<td colspan="4" style="text-align: center;">NOTHING ADDED</td>`
   }
 }
 

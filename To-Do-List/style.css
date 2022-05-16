@@ -17,7 +17,7 @@
 }
 
 .addTodo {
-    margin: 17px auto;
+    margin: 10px auto;
 }
 
 .card {
@@ -41,7 +41,7 @@
 }
 
 #addBtn {
-    margin: 10px auto;
+    margin: 5px auto;
     height: 44px;
     width: 120px;
     background-color: rgb(73, 196, 73);
@@ -54,7 +54,7 @@
 
 .background {
 
-    background-image: url("./backgroundImage.webp"); 
+    background-image: url("./image/backgroundImage.webp"); 
     background-size: cover;
     min-height: 100vh;
 
