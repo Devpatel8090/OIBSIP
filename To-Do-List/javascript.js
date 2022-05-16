@@ -9,21 +9,22 @@ addBtn.addEventListener("click", function (e) {
   let notes = localStorage.getItem("notes");
   if (notes == null) {
     notesObj = [];
-    notesObj.push([addTitle.value,addTime.value,addTxt.value ]);
+    notesObj.push([addTitle.value, addTime.value, addTxt.value]);
     localStorage.setItem("notes", JSON.stringify(notesObj)); // it save the items in the local storage in json formate
   } else {
     notesObj = JSON.parse(notes);
-    notesObj.push([addTitle.value,addTime.value,addTxt.value ]);
+    notesObj.push([addTitle.value, addTime.value, addTxt.value]);
     localStorage.setItem("notes", JSON.stringify(notesObj));
   }
   addTxt.value = "";
   addTitle.value = "";
   addTime.value = "";
-  
+
   console.log(notesObj);
   showNotes();
 });
 
+  // it show the notes also which is not deleted previously 
 function showNotes() {
   let notes = localStorage.getItem("notes");
   if (notes == null) {
