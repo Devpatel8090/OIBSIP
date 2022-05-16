@@ -74,10 +74,12 @@ hr {
 .shlok__container {
     text-align: center;
 }
-.video{
+
+.video {
     margin-top: 2%;
     text-align: center;
 }
+
 .video:hover {
     border: 10px #5e444b;
 }
