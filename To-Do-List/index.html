@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>To Do List</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <h1 style="text-align: center; background-color: #6a67ce; padding: 1%">
+    TO Do List
+  </h1>
+  <div class="container background">
+    <div class="card">
+      <div class="addTodo">
+        <input type="text" id="addTitle" placeholder="Title" />
+      </div>
+      <div class="addTodo">
+        <textarea class="form-control" id="addTxt" placeholder="Description"></textarea>
+      </div>
+      <button id="addBtn">Save</button>
+    </div>
+    <div class="showContent">
+      <table>
+        <thead>
+          <tr class="header">
+            <th scope="col" rowspan="3" class="title">Title</th>
+            <th scope="col" class="desc">Discription</th>
+            <th scope="col" class="delete">Delete</th>
+          </tr>
+        </thead>
+        <tbody id="notes" class="table-content"></tbody>
+      </table>
+    </div>
+  </div>
+
+  <script src="javascript.js"></script>
+</body>
+
+</html>
