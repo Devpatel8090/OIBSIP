@@ -23,7 +23,7 @@
 }
 
 #img1 {
-    position: fixed;
+    position: absolute;
     border: 1px solid #ddd;
     border-radius: 50%;
     padding: 1%;
@@ -73,4 +73,11 @@ hr {
 
 .shlok__container {
     text-align: center;
+}
+.video{
+    margin-top: 2%;
+    text-align: center;
+}
+.video:hover {
+    border: 10px #5e444b;
 }
